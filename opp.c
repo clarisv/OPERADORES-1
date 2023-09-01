@@ -1,57 +1,27 @@
 #include<stdio.h>
-
 main(){
 
-//Construa um algoritmo que, dado quatro valores, A, B, C e D, o algoritmo imprima o maior e o menor valor. 
-
-int valorA, valorB, valorC, valorD, maiorValor, menorValor;
-
-printf("digite o valor de A:");
-scanf("%d", &valorA);
-
-printf("digite o valor de B:");
-scanf("%d", &valorB);
-
-printf("digite o valor de C:");
-scanf("%d", &valorC);
- 
-printf("digite o valor de D:");
-scanf("%d", &valorD);
-
-//encontrar o maior valor
-
-if(valorA > maiorValor){
-    maiorValor = valorA;
-}
-if(valorB > maiorValor){
-    maiorValor = valorB;
-}
-if(valorC > maiorValor){
-    maiorValor = valorC;
-}
-if(valorD > maiorValor){
-    maiorValor = valorD;
-}
 
 
-//encontrar o menor valor
+    //Escreva um algoritmo que leia um número e imprima a raiz quadrada do número 
+    //caso ele seja positivo ou igual a zero e o quadrado do número caso ele seja negativo.
 
-if(valorA < menorValor){
-    menorValor = valorA;
-}
-if(valorB < menorValor){
-    menorValor = valorB;
-}
-if(valorC < menorValor){
-    menorValor = valorC;
-}
-if(valorD < menorValor){
-    menorValor = valorD;
-}
 
-printf("o maior valor e: %d\n", maiorValor);
-printf("o menor valor e: %d\n", menorValor);
+  double numero, resultado;
 
-return 0;
+  printf("digite um numero");
+  scanf("%lf", &numero);
+
+  if(numero >= 0){
+    //se verdadeiro calcular raiz quadrada
+    resultado = sqrt (numero);
+    printf("raiz quadrada de %lf e %lf", numero, resultado);
+
+  }else{
+    resultado = pow (numero, 2);
+    printf("o quadrado de %lf e %lf", numero, resultado);
+
+
+  }
 
 }
